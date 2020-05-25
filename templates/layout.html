@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+</head>
+
+<body>
+    <script type=text/javascript src="{{ url_for('static', filename='js/nav.js') }}"></script>
+
+    <div id="header">
+        <div class="content">
+            <div class="topnav" id="myTopnav">
+                <a href="/">home</a>
+                <a href="#">gallery</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">misc
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('text') }}">text</a>
+                        <a href="#">linkTwo</a>
+                        <a href="#">linkThree</a>
+                    </div>
+                </div>
+
+                <a href="{{ url_for('about') }}">about</a>
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-page">
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+
+</html>
