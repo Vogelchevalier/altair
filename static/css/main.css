@@ -85,6 +85,29 @@ body {
     word-break: keep-all;
 }
 
+a:link {
+    color: #A58A5D;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999E20;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E2E1E7;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: #E2E1E7;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 .topnav {
     background-color: transparent;
     overflow: hidden;
@@ -177,3 +200,4 @@ body {
     color: #E2E1E7;
   }
 }
+
