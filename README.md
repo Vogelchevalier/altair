@@ -1,2 +1,2 @@
 # altair
-My website https://alter.altair.fi
+My website https://altair.fi
