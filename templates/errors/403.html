@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+    403 - Altair
+{% endblock %}
+{% block content %}
+    <div class="text-wrap" style="text-align: center;">
+        403 - Forbidden
+        <img src="/static/img/SakuraDedv2.png" alt="Sakura From Fate/ha" style="width:32px;height:32px;">
+        <a href="{{ url_for('index') }}">Back to the front page</a>
+    </div>
+{% endblock %}
