@@ -3,10 +3,17 @@ from flask import Flask, url_for
 
 app = Flask(__name__)
 
+from application import lastfm
+
 
 @app.context_processor
 def override_url_for():
     return dict(url_for=dated_url_for)
+
+
+@app.context_processor
+def lastfmtrack():
+    return dict(song=lastfm.getPlayingTrack())
 
 
 def dated_url_for(endpoint, **values):
