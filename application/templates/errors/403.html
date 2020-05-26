@@ -5,7 +5,7 @@
 {% block content %}
     <div class="text-wrap" style="text-align: center;">
         403 - Forbidden
-        <img src="/application/static/img/SakuraDedv2.png" alt="Sakura From Fate/ha" style="width:32px;height:32px;">
+        <img src="{{ url_for('static', filename='img/SakuraDedv2.png') }}" alt="Sakura From Fate/ha" style="width:32px;height:32px;">
         <a href="{{ url_for('index') }}">Back to the front page</a>
     </div>
 {% endblock %}
