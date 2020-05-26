@@ -18,5 +18,5 @@ def getPlayingTrack():
     artist = root[0][0][0].text
     song_title = root[0][0][1].text
 
-    return artist + " - " + song_title if now_playing else "Nothing"
+    return artist + " - " + song_title if now_playing else "Playing nothing"
 
