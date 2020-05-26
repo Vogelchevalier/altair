@@ -3,7 +3,7 @@
 import os
 import secrets
 from datetime import datetime
-from flask import request, url_for
+from flask import request
 from PIL import Image
 from application import app
 
@@ -11,9 +11,8 @@ from application import app
 @app.route("/upload", methods=["POST"])
 def upload():
 
-    f = open("/home/sami/secret.csv", "r")
-    secret = f.readline()
-    f.close()
+    with open("/home/sami/secret.csv", "r") as f:
+        secret = f.readline()
 
     domain = "https://altair.fi"
     root_folder = "/home/sami/alter/i"
