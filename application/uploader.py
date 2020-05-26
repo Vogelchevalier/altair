@@ -6,11 +6,6 @@ from PIL import Image
 from application import app
 
 
-@app.route("/test")
-def test():
-    return "testisivu"
-
-
 @app.route("/upload", methods=["POST"])
 def upload():
 
