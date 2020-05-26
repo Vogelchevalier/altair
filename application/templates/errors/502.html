@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}
-    404 - Altair
+    502 - Altair
 {% endblock %}
 {% block content %}
     <div class="text-wrap" style="text-align: center;">
-        404 - Not found
-        <img src="{{ url_for('static', filename='img/404.png') }}" alt="Caster Medea from Fate/ha" style="width:32px;height:32px;">
+        502 - Bad Gateway
+        <img src="{{ url_for('static', filename='img/502.png') }}" alt="Rider Medusa from Fate/ha" style="width:32px;height:32px;">
         <a href="{{ url_for('index') }}">Back to the front page</a>
     </div>
 {% endblock %}
