@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+    three.js - Altair
+{% endblock %}
+{% block content %}
+    <script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <div id="my-canvas">
+        HUUT
+    </div>
+    <script type=text/javascript src="{{ url_for('static', filename='js/test.js') }}"></script>
+{% endblock %}

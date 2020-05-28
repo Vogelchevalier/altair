@@ -12,9 +12,14 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/text")
-def text():
-    return render_template("text.html")
+@app.route("/league_on_arch")
+def league_on_arch():
+    return render_template("league_on_arch.html")
+
+
+@app.route("/js_test")
+def js_test():
+    return render_template("js_test.html")
 
 
 ##################################################

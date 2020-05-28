@@ -1,4 +1,6 @@
+# Inspiration from:
 # https://github.com/markylon/flask-sharex
+# Under GPLv3. See LICENSE in application/uploader
 
 import os
 import secrets

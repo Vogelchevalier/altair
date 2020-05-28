@@ -26,7 +26,7 @@ def dated_url_for(endpoint, **values):
 
 
 from application import views
-from application import uploader
+from application.uploader import up
 
 
 if __name__ == "__main__":

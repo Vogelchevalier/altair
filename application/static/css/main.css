@@ -9,7 +9,7 @@ body {
     height: 100%;
     width: 100%;
 
-    font-family: "Noto Sans Japanese Regular", sans-serif;
+    font-family: "M PLUS Rounded 1c", sans-serif;
     color: #E2E1E7;
     background-color: #212A2F;
     background-image: url("../img/kimi-no-na-wa-4k.jpg");
@@ -17,6 +17,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw auto;
+}
+
+canvas {
+    display: block;
 }
 
 #header {
@@ -83,6 +87,28 @@ body {
     word-break: keep-all;
 }
 
+.code-wrap {
+    width: max-content;
+    margin: 0;
+    padding: 5px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    color: #E2E1E7;
+    background-color: #212A2F;
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+#my-canvas {
+    width: 640px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+
 a:link {
     color: #A58A5D;
     background-color: transparent;
@@ -117,9 +143,9 @@ a:active {
     display: block;
     color: #E2E1E7;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .topnav .icon {
@@ -132,11 +158,11 @@ a:active {
 }
 
 .dropdown .dropbtn {
-    font-size: 1.2em;
+    font-size: 1.4em;
     border: none;
     outline: none;
     color: #E2E1E7;
-    padding: 14px 16px;
+    padding: 10px 16px;
     background-color: transparent;
     font-family: inherit;
     margin: 0;
@@ -154,7 +180,7 @@ a:active {
 .dropdown-content a {
     float: none;
     color: #E2E1E7;
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
     text-align: left;

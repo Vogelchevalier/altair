@@ -5,7 +5,8 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
 </head>
 
@@ -15,7 +16,7 @@
     <div id="header">
         <div class="content">
             <div class="topnav" id="myTopnav">
-                <a href="/">home</a>
+                <a style="color: #999E20; " href="/">altair</a>
                 <a target="_blank" href="https://cloud.altair.fi">cloud</a>
 
                 <div class="dropdown">
@@ -23,9 +24,9 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="{{ url_for('text') }}">text</a>
-                        <a href="#">linkTwo</a>
-                        <a href="#">linkThree</a>
+                        <a href="{{ url_for('league_on_arch') }}">League on Arch</a>
+                        <a href="{{ url_for('js_test') }}">JS Test</a>
+                        <a href="#">HUU</a>
                     </div>
                 </div>
 
@@ -45,7 +46,7 @@
     <div id="footer">
         <div class="content" style="padding-top: 16px">
             <span class="text-wrap" style="float: left;">Powered by Python, Flask, Gunicorn, NGINX and Debian. <a target="_blank" href="https://github.com/Vogelchevalier/altair">GitHub</a></span>
-            <span class="text-wrap" style="float: right;"><a target="_blank" href="https://www.last.fm/user/xLapin">{{ song }} <img src="{{ url_for('static', filename='img/lastfm.png') }}" alt="Last.fm logo" style="vertical-align: top; width:18px;height:18px;"></a></span>
+            <span class="text-wrap" style="float: right;"><a target="_blank" href="https://www.last.fm/user/xLapin">{{ song }} <img src="{{ url_for('static', filename='img/lastfm.png') }}" alt="Last.fm logo" style="vertical-align: middle; width:18px;height:18px;"></a></span>
         </div>
     </div>
 </body>
