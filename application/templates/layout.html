@@ -14,6 +14,7 @@
     <script type=text/javascript src="{{ url_for('static', filename='js/nav.js') }}"></script>
 
     <div id="header">
+        <div id="header-content">
         <div class="content">
             <div class="topnav" id="myTopnav">
                 <a style="color: #999E20; " href="/">altair</a>
@@ -25,8 +26,7 @@
                     </button>
                     <div class="dropdown-content">
                         <a href="{{ url_for('league_on_arch') }}">League on Arch</a>
-                        <a href="{{ url_for('js_test') }}">JS Test</a>
-                        <a href="#">HUU</a>
+                        <a href="{{ url_for('space') }}">space</a>
                     </div>
                 </div>
 
@@ -34,20 +34,23 @@
                 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navFunction()">&#9776;</a>
             </div>
         </div>
+        </div>
     </div>
 
     <div id="main-page">
-        <div class="content">
+        <div class="main-page-content">
             {% block content %}
             {% endblock %}
         </div>
     </div>
 
     <div id="footer">
+        <div id="footer-content">
         <div class="content" style="padding-top: 16px">
             <span class="text-wrap" style="float: left;">Powered by Python, Flask, Gunicorn, NGINX and Debian. <a target="_blank" href="https://github.com/Vogelchevalier/altair">GitHub</a></span>
             <span class="text-wrap" style="float: right;"><a target="_blank" href="https://www.last.fm/user/xLapin">{{ song }} <img src="{{ url_for('static', filename='img/lastfm.png') }}" alt="Last.fm logo" style="vertical-align: middle; width:18px;height:18px;"></a></span>
         </div>
+    </div>
     </div>
 </body>
 

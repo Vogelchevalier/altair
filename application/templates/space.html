@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block title %}
+    space - Altair
+{% endblock %}
+{% block content %}
+    <script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <canvas id="c">
+    </canvas>
+    <p class="text-wrap" style="text-align: center">ㄒ卄乇　丂ㄖㄥ卂尺　丂ㄚ丂ㄒ乇爪</p>
+    <script type=text/javascript src="{{ url_for('static', filename='js/space.js') }}"></script>
+{% endblock %}

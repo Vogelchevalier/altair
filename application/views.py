@@ -17,9 +17,9 @@ def league_on_arch():
     return render_template("league_on_arch.html")
 
 
-@app.route("/js_test")
-def js_test():
-    return render_template("js_test.html")
+@app.route("/space")
+def space():
+    return render_template("space.html")
 
 
 ##################################################
