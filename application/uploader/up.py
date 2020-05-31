@@ -38,8 +38,8 @@ def upload():
             salt = secrets.token_urlsafe(5)
             filename = "".join([day_time, "-", salt, extension])
 
-            if not os.path.exists(os.path.dirname(root_folder + "/" + month_folder)):
-                os.makedirs(os.path.dirname(root_folder + "/" + month_folder))
+            if not os.path.exists(root_folder + "/" + month_folder):
+                os.makedirs("".join([root_folder, "/", month_folder]), exist_ok=True)
 
             file_without_exif.save(os.path.join(root_folder + "/" + month_folder, filename))
             return "".join([domain, "/i/", month_folder, "/", filename]), 200
